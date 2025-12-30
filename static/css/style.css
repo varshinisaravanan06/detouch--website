@@ -354,4 +354,36 @@ section img {
     display: flex;
   }
 }
+.header {
+  position: relative;
+  z-index: 1000;
+}
+
+.nav {
+  z-index: 1001;
+}
+.nav {
+  background: #111;   /* dark color */
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #111;
+  z-index: 1000;
+}
+
+.nav {
+  background: #111;
+  z-index: 1001;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
+}
 

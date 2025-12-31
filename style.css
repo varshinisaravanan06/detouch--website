@@ -437,7 +437,7 @@ section {
 /* Fix big headings cutting on mobile */
 @media (max-width: 600px) {
 
-  h1 {
+  h2 {
     font-size: 34px !important;
     line-height: 1.2;
     text-align: center;
@@ -445,7 +445,7 @@ section {
     overflow-wrap: break-word;
   }
 
-  .gallery h1,
+  .gallery h2,
   .gallery-title,
   .gallery-heading {
     font-size: 34px !important;

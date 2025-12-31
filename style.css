@@ -486,5 +486,42 @@ section {
 html, body {
   overflow-x: hidden !important;
 }
+/* ===== FINAL MOBILE HERO FIX (GUARANTEED) ===== */
+
+/* Override container on mobile */
+@media (max-width: 768px) {
+
+  .hero {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .hero .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+    padding: 40px 16px;
+    box-sizing: border-box;
+  }
+
+  .hero h2 {
+    font-size: 32px;
+    line-height: 1.2;
+    text-align: center;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .hero p {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+/* Kill horizontal scroll completely */
+html, body {
+  overflow-x: hidden !important;
+}
 
 

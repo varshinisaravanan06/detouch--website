@@ -571,32 +571,3 @@ html, body {
     display: flex !important;
   }
 }
-.menu-toggle {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-    font-size: 26px;
-    cursor: pointer;
-  }
-
-  .nav {
-    display: none;
-    flex-direction: column;
-    background: #000;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 100%;
-    z-index: 999;
-  }
-
-  .nav.show {
-    display: flex;
-  }
-}
-
-
-

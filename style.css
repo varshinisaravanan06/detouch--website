@@ -349,10 +349,6 @@ section img {
     padding: 12px 0;
     border-top: 1px solid #333;
   }
-
-  .nav.active {
-    display: flex;
-  }
 }
 .header {
   position: relative;
@@ -522,6 +518,34 @@ html, body {
 /* Kill horizontal scroll completely */
 html, body {
   overflow-x: hidden !important;
+}
+/* Desktop nav */
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+/* Mobile nav */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: #000;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .nav.active {
+    display: flex;
+  }
 }
 
 

@@ -547,6 +547,30 @@ html, body {
     display: flex;
   }
 }
+/* ===== FORCE MOBILE NAV FIX ===== */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block !important;
+    font-size: 26px;
+    cursor: pointer;
+  }
+
+  .nav {
+    display: none !important;
+    flex-direction: column;
+    background: #000;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .nav.active {
+    display: flex !important;
+  }
+}
 
 
 

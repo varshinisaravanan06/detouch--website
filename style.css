@@ -1,4 +1,27 @@
 /* Google Fonts */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* common container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px;
+}
+
+/* images mobile-ku */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -254,4 +277,148 @@ section img {
     width: 220px;              /* size adjust panna lam */
     height: auto;
 }
+@media (max-width: 768px) {
+  .row,
+  .services,
+  .cards,
+  .flex {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+/* HEADER */
+.header {
+  background: #111;
+  color: #fff;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* NAV LINKS */
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* MOBILE TOGGLE */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav a {
+    padding: 12px 0;
+    border-top: 1px solid #333;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+}
+.header {
+  position: relative;
+  z-index: 1000;
+}
+
+.nav {
+  z-index: 1001;
+}
+.nav {
+  background: #111;   /* dark color */
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #111;
+  z-index: 1000;
+}
+
+.nav {
+  background: #111;
+  z-index: 1001;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    padding: 10px 15px;
+  }
+
+  .brand h1 {
+    font-size: 24px;
+  }
+
+  .brand p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 600px) {
+  section {
+    padding: 40px 15px;
+  }
+}
+/* Stop horizontal scroll on mobile */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/* Gallery heading mobile fix */
+@media (max-width: 600px) {
+  .gallery h1,
+  .gallery-title,
+  .gallery-heading {
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    word-break: break-word;
+  }
+}
+
 

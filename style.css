@@ -452,5 +452,39 @@ section {
     white-space: normal !important;
   }
 }
+/* ===== HERO SECTION MOBILE FIX ===== */
+.hero {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.hero .container {
+  max-width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+/* Fix heading cut & swipe issue */
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 32px;
+    line-height: 1.2;
+    text-align: center;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .hero p {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+/* Absolute final horizontal scroll killer */
+html, body {
+  overflow-x: hidden !important;
+}
 
 

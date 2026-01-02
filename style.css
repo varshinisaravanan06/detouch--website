@@ -571,3 +571,14 @@ html, body {
     display: flex !important;
   }
 }
+/* Mobile view – Gallery & Services images fix */
+@media (max-width: 768px) {
+
+  .gallery img,
+  .services img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+}

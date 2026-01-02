@@ -714,3 +714,21 @@ html, body {
     height: auto;
   }
 }
+/* Gallery mobile grid – 2 images per row */
+@media (max-width: 768px) {
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 👈 2 images per row */
+    gap: 12px;
+    padding: 10px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+  }
+
+}

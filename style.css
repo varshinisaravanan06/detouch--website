@@ -525,6 +525,7 @@ html, body {
   gap: 20px;
 }
 
+
 /* Mobile nav */
 @media (max-width: 768px) {
 
@@ -648,8 +649,35 @@ html, body {
   .service-card img {
     width: 100% !important;
     height: auto !important;
-    transform: scale(1.08);   /* 👈 image perusa aagum */
+    transform: scale(1.1);   /* 👈 image perusa aagum */
     margin-bottom: 18px;      /* gap neat-ah irukka */
   }
 
+}
+/* Desktop only */
+@media (min-width: 769px) {
+  .nav {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+/* Mobile only */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav.active {
+    display: flex;
+  }
 }

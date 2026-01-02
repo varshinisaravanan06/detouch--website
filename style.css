@@ -582,3 +582,21 @@ html, body {
   }
 
 }
+/* FORCE mobile image resize – Gallery & Services */
+@media (max-width: 768px) {
+
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .gallery img,
+  .services img,
+  .gallery-item img,
+  .service-card img {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+  }
+
+}

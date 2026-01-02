@@ -732,3 +732,33 @@ html, body {
   }
 
 }
+/* Gallery mobile grid – 2 images per row */
+@media (max-width: 768px) {
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+    gap: 12px; /* space between images */
+    padding: 10px;
+  }
+
+  .gallery-grid img {
+    width: 100%;   /* full width of cell */
+    height: auto;  /* keep aspect ratio */
+    border-radius: 8px;
+    display: block;
+  }
+}
+
+/* Laptop / Desktop remain horizontal */
+@media (min-width: 769px) {
+  .gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .gallery-grid img {
+    width: 100px;  /* small icons for desktop */
+    height: auto;
+  }
+}

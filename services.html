@@ -191,13 +191,26 @@
   <p>© 2025 De Touch – Anna Poorani Makeover</p>
 </footer>
 <script>
-  const toggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.nav');
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav");
 
-  toggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
+    if (!toggle || !nav) {
+      console.log("Toggle or nav missing");
+      return;
+    }
+
+    toggle.onclick = () => {
+      if (nav.style.display === "flex") {
+        nav.style.display = "none";
+      } else {
+        nav.style.display = "flex";
+        nav.style.flexDirection = "column";
+      }
+    };
   });
 </script>
+
 
 </body>
 </html>

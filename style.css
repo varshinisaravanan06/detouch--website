@@ -694,3 +694,17 @@ html, body {
     width: 100%;
   }
 }
+/* FORCE Waxing image size – Mobile */
+@media (max-width: 768px) {
+
+  .service-card img,
+  .services img,
+  img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    transform: scale(1.12);
+    display: block;
+  }
+
+}

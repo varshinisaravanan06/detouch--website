@@ -627,3 +627,29 @@ html, body {
   }
 
 }
+@media (max-width: 768px) {
+
+  /* Force Waxing image fix */
+  .service-card.waxing img,
+  .waxing img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+  }
+
+}
+/* EXTRA IMAGE SIZE BOOST – Mobile only */
+@media (max-width: 768px) {
+
+  .gallery img,
+  .services img,
+  .gallery-item img,
+  .service-card img {
+    width: 100% !important;
+    height: auto !important;
+    transform: scale(1.08);   /* 👈 image perusa aagum */
+    margin-bottom: 18px;      /* gap neat-ah irukka */
+  }
+
+}
